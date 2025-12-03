@@ -14,7 +14,7 @@
 /* Imagens do carrossel */
 .carousel-inner img {
     width: 100%;        /* largura total */
-    height: 500px;      /* altura fixa */
+    height: 580px;      /* altura fixa */
     object-fit: cover;  /* serve para preencher o espaço  */
 }
 
@@ -41,4 +41,15 @@
     .carousel-inner img {
         height: 200px;
     }
+}
+
+
+.col{
+    transition: 0.3s ease;
+}
+
+.col:hover {
+    
+    transform: scale(1.1);
+    
 }
