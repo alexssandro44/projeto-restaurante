@@ -1,0 +1,10 @@
+.col{
+    transition: 0.3s ease;
+    
+    }
+    
+    .col:hover{
+        transform: scale(1.1); /* aumenta */
+       
+    }
+    
