@@ -1,10 +1,44 @@
-.col{
-    transition: 0.3s ease;
-    
+
+.carrosel {
+    width: 100%;      /* ocupa toda a largura da tela */
+    margin: 0;        /* serve para remover as margens */
+    padding: 0;      
+}
+
+/* itens do carrossel */
+.carousel-inner {
+    width: 100%;
+    overflow: hidden; /* garante que o conteudo não exceda o espaço */
+}
+
+/* Imagens do carrossel */
+.carousel-inner img {
+    width: 100%;        /* largura total */
+    height: 500px;      /* altura fixa */
+    object-fit: cover;  /* serve para preencher o espaço  */
+}
+
+/*  controlar setas e indicadores */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;         /* tamanho das setas */
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: rgba(0,0,0,0.5); /* cor dos indicadores */
+}
+
+/*@media serve para aplicar os estilos caso a condição seja verdadeira */
+/* Responsividade: altura menor em telas pequenas */
+
+@media (max-width: 768px) {
+    .carousel-inner img {
+        height: 300px;
     }
-    
-    .col:hover{
-        transform: scale(1.1); /* aumenta */
-       
+}
+
+@media (max-width: 480px) {
+    .carousel-inner img {
+        height: 200px;
     }
-    
+}
